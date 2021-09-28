@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632847215245,
+  "lastUpdate": 1632850951395,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5b91ccde820dae0b4eb969eb53d88227c9582931",
-          "message": "client: add `NEW_BLOCK` devp2p message handler (#1443)\n\n* client: add NEW_BLOCK handler to ETH protocol\r\n\r\n* lint\r\n\r\n* move block construction to handleEth\r\n\r\n* Add encode method to NewBlock handler\r\n\r\n* Add test to invoke handleNewBlock\r\n\r\n* add integration test for new block\r\n\r\n* lint fixes\r\n\r\n* Fix import\r\n\r\n* Revise common instantiation in block constructor\r\n\r\n* Fix protocol encode/decode and add test\r\n\r\n* lint fixes\r\n\r\n* Fix broken test\r\n\r\n* lint fix\r\n\r\n* Many fixes\r\n\r\n* fix broken test\r\n\r\n* fix broken test\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-06T11:31:44+02:00",
-          "tree_id": "ef48072ba50468a1618dd1ac3060b4c14a5bc57c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5b91ccde820dae0b4eb969eb53d88227c9582931"
-        },
-        "date": 1630920965055,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 18889,
-            "range": "±14.39%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 22130,
-            "range": "±2.01%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 19885,
-            "range": "±2.40%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 8614,
-            "range": "±22.98%",
-            "unit": "ops/sec",
-            "extra": "37 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 17752,
-            "range": "±6.66%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1262,
-            "range": "±6.57%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 113,
-            "range": "±119.70%",
-            "unit": "ops/sec",
-            "extra": "29 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 124,
-            "range": "±11.94%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 10.39,
-            "range": "±140.01%",
-            "unit": "ops/sec",
-            "extra": "17 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±99.40%",
             "unit": "ops/sec",
             "extra": "31 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0477d64c259b354ff57bab7e77be43081216fea",
+          "message": "Block, Blockchain: bugfix releases (client preparation) fixing London HF at block 0 or 1 handling (#1495)",
+          "timestamp": "2021-09-28T10:36:54-07:00",
+          "tree_id": "a2dbe5dfd627bc2d25934d4619a3e747fc0a6969",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b0477d64c259b354ff57bab7e77be43081216fea"
+        },
+        "date": 1632850950301,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 11257,
+            "range": "±13.36%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 13204,
+            "range": "±3.07%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12088,
+            "range": "±3.79%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6749,
+            "range": "±24.52%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13043,
+            "range": "±4.32%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1052,
+            "range": "±7.56%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 129,
+            "range": "±84.90%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 95.25,
+            "range": "±41.57%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 25.24,
+            "range": "±10.87%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
