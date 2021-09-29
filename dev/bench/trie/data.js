@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632850951395,
+  "lastUpdate": 1632950652193,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a3984a3b80bccbfb376918c51556a845afbecad9",
-          "message": "monorepo: upgrade TypeScript to v4, explicit `error: any` type for catch clauses (#1452)\n\n* run test on PR to debug\r\n\r\n* upgrade typescript version\r\n\r\n* add `any` type to error catch clauses to satisfy noImplicitAny\r\n\r\n* remove debugging line\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-07T10:02:39+02:00",
-          "tree_id": "46e7349936bfc096d73d386f8a206e1c475df364",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/a3984a3b80bccbfb376918c51556a845afbecad9"
-        },
-        "date": 1631002062478,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 16824,
-            "range": "±11.88%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 17475,
-            "range": "±2.84%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 9482,
-            "range": "±21.65%",
-            "unit": "ops/sec",
-            "extra": "44 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 14950,
-            "range": "±1.76%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 15684,
-            "range": "±1.27%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1241,
-            "range": "±7.03%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 121,
-            "range": "±115.66%",
-            "unit": "ops/sec",
-            "extra": "29 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 147,
-            "range": "±6.61%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 22.25,
-            "range": "±82.44%",
-            "unit": "ops/sec",
-            "extra": "15 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±10.87%",
             "unit": "ops/sec",
             "extra": "27 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "346dde294bb23d6acd6b4df3e6d7a26fb46555cb",
+          "message": "Client: first stable release v0.1.0 🎉 (#1499)\n\n* client -> release: bumped version to v0.1.0, added CHANGELOG entry\r\n\r\n* client -> release: updated README\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\n* delete removed readme section\r\n\r\n* run prettier\r\n\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>",
+          "timestamp": "2021-09-29T23:19:17+02:00",
+          "tree_id": "e9e124e7f20afde58790aa5dd90a664f88fdb1cf",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/346dde294bb23d6acd6b4df3e6d7a26fb46555cb"
+        },
+        "date": 1632950651558,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 16360,
+            "range": "±12.79%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 18046,
+            "range": "±1.59%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 10065,
+            "range": "±20.40%",
+            "unit": "ops/sec",
+            "extra": "47 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 15217,
+            "range": "±2.27%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 17127,
+            "range": "±2.62%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1263,
+            "range": "±7.16%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 73.49,
+            "range": "±149.43%",
+            "unit": "ops/sec",
+            "extra": "21 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 119,
+            "range": "±10.49%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 11.57,
+            "range": "±126.92%",
+            "unit": "ops/sec",
+            "extra": "20 samples"
           }
         ]
       }
