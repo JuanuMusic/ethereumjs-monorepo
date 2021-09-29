@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632950652193,
+  "lastUpdate": 1632953531203,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2e8dff0e3d7dcd45de6b79676d5b5a58458fed3f",
-          "message": "Client: New Pooled Tx Hashes Service Functionality (Re-broadcasting/Tracking) for TxPool (#1441)\n\n* client -> tx pool: added initial setup and functionality to send/broadcast new (pooled) tx hashes\r\n\r\n* client -> tx pool: add new pooled tx hashes received as well as rebroadcasted to list of tx hashes known by peer\r\n\r\n* client -> tx pool: some bugfixes, refactoring and API refinements along the new tx hashes broadcasting logic, added tests\r\n\r\n* client -> tx pool: added new getByHash() function, added PooledTransactions response service functionality\r\n\r\n* client: improved message encoding/decoding and typing for transaction related service functionality (PooledTransactions, Transactions, GetPooledTransactions)\r\n\r\n* client -> tx pool: added mock for getPooledTransactions ETH message integration test (TODO)\r\n\r\n* client -> FullEthereumService: fixed GetPooledTransactions message handling bug, added integration test\r\n\r\n* client -> FullEthereumService: added simple Transactions message integration test\r\n\r\n* client -> tx pool: added Transactions ETH method retrieval and rebroadcast functionality\r\n\r\n* Fix test\r\n\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
-          "timestamp": "2021-09-07T20:46:41+02:00",
-          "tree_id": "26a84f99c2149f51e07a1e1a1d450b66f2425e2b",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/2e8dff0e3d7dcd45de6b79676d5b5a58458fed3f"
-        },
-        "date": 1631040666149,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 18014,
-            "range": "±15.16%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 20073,
-            "range": "±2.37%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11027,
-            "range": "±21.96%",
-            "unit": "ops/sec",
-            "extra": "52 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 17269,
-            "range": "±1.14%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 18493,
-            "range": "±2.89%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1240,
-            "range": "±6.05%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 78.94,
-            "range": "±125.07%",
-            "unit": "ops/sec",
-            "extra": "20 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 144,
-            "range": "±7.21%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 8.23,
-            "range": "±127.19%",
-            "unit": "ops/sec",
-            "extra": "15 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±126.92%",
             "unit": "ops/sec",
             "extra": "20 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "531e4b3a1843833b3015ab185fc610f4f2da5d67",
+          "message": "Tx/Util: ensure only integers are allowed as input (#1500)\n\n* util: verify intToBuffer/intToHex inputs are integers\r\ntx: add checks to verify decimal values cannot be used\r\n\r\n* util/tx: check max safe integer, add string tests\r\n\r\n* util: simplify intToHex\r\n\r\n* tx: add test cases\r\n\r\n* tx/util: add test cases\r\n\r\n* tx: 1 more test failing input test case\r\n\r\n* tx: remove console.log\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-30T00:06:39+02:00",
+          "tree_id": "e2ce055bf1b6a2c53a38ada77f0198fed1dcea3d",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/531e4b3a1843833b3015ab185fc610f4f2da5d67"
+        },
+        "date": 1632953530074,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 11425,
+            "range": "±12.26%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 12842,
+            "range": "±2.99%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12378,
+            "range": "±3.45%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 7242,
+            "range": "±26.38%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13399,
+            "range": "±3.75%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1119,
+            "range": "±6.72%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 130,
+            "range": "±86.80%",
+            "unit": "ops/sec",
+            "extra": "37 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 120,
+            "range": "±16.34%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.81,
+            "range": "±120.04%",
+            "unit": "ops/sec",
+            "extra": "23 samples"
           }
         ]
       }
