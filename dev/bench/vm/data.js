@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632950706706,
+  "lastUpdate": 1632953512956,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2e8dff0e3d7dcd45de6b79676d5b5a58458fed3f",
-          "message": "Client: New Pooled Tx Hashes Service Functionality (Re-broadcasting/Tracking) for TxPool (#1441)\n\n* client -> tx pool: added initial setup and functionality to send/broadcast new (pooled) tx hashes\r\n\r\n* client -> tx pool: add new pooled tx hashes received as well as rebroadcasted to list of tx hashes known by peer\r\n\r\n* client -> tx pool: some bugfixes, refactoring and API refinements along the new tx hashes broadcasting logic, added tests\r\n\r\n* client -> tx pool: added new getByHash() function, added PooledTransactions response service functionality\r\n\r\n* client: improved message encoding/decoding and typing for transaction related service functionality (PooledTransactions, Transactions, GetPooledTransactions)\r\n\r\n* client -> tx pool: added mock for getPooledTransactions ETH message integration test (TODO)\r\n\r\n* client -> FullEthereumService: fixed GetPooledTransactions message handling bug, added integration test\r\n\r\n* client -> FullEthereumService: added simple Transactions message integration test\r\n\r\n* client -> tx pool: added Transactions ETH method retrieval and rebroadcast functionality\r\n\r\n* Fix test\r\n\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
-          "timestamp": "2021-09-07T20:46:41+02:00",
-          "tree_id": "26a84f99c2149f51e07a1e1a1d450b66f2425e2b",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/2e8dff0e3d7dcd45de6b79676d5b5a58458fed3f"
-        },
-        "date": 1631040688953,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2116,
-            "range": "±2.26%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2016,
-            "range": "±6.05%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 2060,
-            "range": "±1.10%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2022,
-            "range": "±1.30%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1974,
-            "range": "±1.41%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1517,
-            "range": "±12.36%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1897,
-            "range": "±1.51%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1864,
-            "range": "±1.71%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1808,
-            "range": "±2.02%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1805,
-            "range": "±1.80%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±16.02%",
             "unit": "ops/sec",
             "extra": "57 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "531e4b3a1843833b3015ab185fc610f4f2da5d67",
+          "message": "Tx/Util: ensure only integers are allowed as input (#1500)\n\n* util: verify intToBuffer/intToHex inputs are integers\r\ntx: add checks to verify decimal values cannot be used\r\n\r\n* util/tx: check max safe integer, add string tests\r\n\r\n* util: simplify intToHex\r\n\r\n* tx: add test cases\r\n\r\n* tx/util: add test cases\r\n\r\n* tx: 1 more test failing input test case\r\n\r\n* tx: remove console.log\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-30T00:06:39+02:00",
+          "tree_id": "e2ce055bf1b6a2c53a38ada77f0198fed1dcea3d",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/531e4b3a1843833b3015ab185fc610f4f2da5d67"
+        },
+        "date": 1632953512322,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 24136,
+            "range": "±6.99%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 24584,
+            "range": "±2.24%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 22587,
+            "range": "±6.18%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 15956,
+            "range": "±18.82%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 22502,
+            "range": "±2.50%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 22040,
+            "range": "±3.07%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 12798,
+            "range": "±17.62%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 11380,
+            "range": "±37.05%",
+            "unit": "ops/sec",
+            "extra": "46 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 20377,
+            "range": "±3.32%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 11305,
+            "range": "±11.79%",
+            "unit": "ops/sec",
+            "extra": "37 samples"
           }
         ]
       }
