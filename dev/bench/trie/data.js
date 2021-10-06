@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633538717774,
+  "lastUpdate": 1633545549631,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5d2f2b240ab8110ae0689beda5ddd1a86b1ae0a1",
-          "message": "client -> FullSynchronizer: handle NEW_BLOCK message and rebroadcast to peers (#1458)\n\n* client: rebroadcast NEW_BLOCK message\r\n\r\n* add NewBlockHashes to knownblocks for each peer\r\n\r\n* lint\r\n\r\n* Requested changes\r\n\r\n* requested fixes\r\n\r\n* pass peer ID to new block handler\r\n\r\n* client: small review adjustments\r\n\r\n* client: fixed tests\r\n\r\n* Fix tests, move handleNewBlockHashes to fullsync\r\n\r\n* various fixes\r\n\r\n* fix error logging\r\n\r\n* lint\r\n\r\n* Fix no enqueueTask of undefined error on node startup\r\n\r\n* fix `NewBlockHashes` message bug\r\n\r\n* client: further align tx pool and new block handling code for easier portability/readability, new sendNewBlock method\r\n\r\n* client: simplify block hash tracking code for sending peer by using addToKnownByPeer() method\r\n\r\n* client: simplify NewBlock -> NewBlockHashes rebroadcasting logic by using addToKnowByPeer() function\r\n\r\n* client: update sync target height if block from NEW_BLOCK message is added to the chain to avoid sync inconsistencies\r\n\r\n* client -> FullSynchronizer: removed redundand (TypeScript) code doc type annotations\r\n\r\n* client -> FullSynchronizer: improved handleNewBlockHashes() bulk request logic readability\r\n\r\n* client -> FullSynchronizer: rather ignore NEW_BLOCK_HASHES method than side-starting a new fetcher in handleNewBlockHashes() when fetcher is not yet up and running\r\n\r\n* client -> FullSynchronizer: extract bulk task creation functionality as new enqueueByNumberList() function in BlockFetcherBase\r\n\r\n* client: improved FullSynchronizer NewBlock/NewBlockHashes test robustness and readability\r\n\r\n* client: added Fetcher.enqueueByNumberList() test cases to FullSynchronizer tests\r\n\r\n* client: added syncTargetHeight test case\r\n\r\n* client: added enqueueByNumberList() Fetcher tests\r\n\r\n* client -> FullSynchronizer: fixed addToKnownByPeer() not filtering existing hashes correctly, added missing putBlock() test case\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-14T15:22:13+02:00",
-          "tree_id": "7cb14bdf3d922b538bd239db979ee21447b27efc",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5d2f2b240ab8110ae0689beda5ddd1a86b1ae0a1"
-        },
-        "date": 1631626060670,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 14202,
-            "range": "±10.46%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 15345,
-            "range": "±1.84%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 9795,
-            "range": "±23.91%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 12770,
-            "range": "±15.50%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 15528,
-            "range": "±3.05%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1308,
-            "range": "±5.98%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 85.55,
-            "range": "±143.21%",
-            "unit": "ops/sec",
-            "extra": "22 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 133,
-            "range": "±15.20%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 8.49,
-            "range": "±117.21%",
-            "unit": "ops/sec",
-            "extra": "16 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±114.22%",
             "unit": "ops/sec",
             "extra": "15 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb4c15e10d89101ec62a64b75f7ab003d39cda75",
+          "message": "vm: fix accountexists bug in pre-SD hardforks (#1516)\n\n* vm: fix accountexists bug in pre-SD hardforks\r\n\r\nCo-authored-by: Jochem Brouwer <jochembrouwer96@gmail.com>",
+          "timestamp": "2021-10-06T14:33:16-04:00",
+          "tree_id": "fa7be6fedafa98cca960e98446e1cd22f926d59d",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/fb4c15e10d89101ec62a64b75f7ab003d39cda75"
+        },
+        "date": 1633545548956,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 11185,
+            "range": "±12.70%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 13256,
+            "range": "±2.88%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12767,
+            "range": "±3.45%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6818,
+            "range": "±27.36%",
+            "unit": "ops/sec",
+            "extra": "46 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 12685,
+            "range": "±4.42%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1053,
+            "range": "±7.42%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 135,
+            "range": "±84.24%",
+            "unit": "ops/sec",
+            "extra": "42 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 102,
+            "range": "±34.05%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.47,
+            "range": "±113.99%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
