@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633545549631,
+  "lastUpdate": 1633622195849,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ee4481f7bd3ef2037cd6e56f3d3f1174bbb5e3b5",
-          "message": "Monorepo: Update tape from v4 to v5 (#1447)\n\n* monorepo: update tape from v4 to v5\r\n\r\n* client: fixes for tape v5 upgrade\r\n\r\n* remove tape-catch (last publish 5 yrs ago) and use tape v5\r\n\r\n* small fixes\r\n\r\n* small fixes after merge from master\r\n\r\n* fix cli test\r\n\r\n* upgrade tape from v4 to v5 in rest of packages, update package-lock\r\n\r\n* fix block tests for tape v5\r\n\r\n* vm: fixed tests for tape v5\r\n\r\n* devp2p: fixed tests for tape v5\r\n\r\n* devp2p: lint fix\r\n\r\nCo-authored-by: Emerson Macro <emersonmacro@gmail.com>\r\nCo-authored-by: emersonmacro <77563348+emersonmacro@users.noreply.github.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2021-09-15T09:58:05+02:00",
-          "tree_id": "8003b59d3e7a26e4bc918e8fd83ba11d8b395a6a",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ee4481f7bd3ef2037cd6e56f3d3f1174bbb5e3b5"
-        },
-        "date": 1631693093905,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 11170,
-            "range": "±12.55%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12558,
-            "range": "±3.29%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 11124,
-            "range": "±4.07%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 5146,
-            "range": "±24.64%",
-            "unit": "ops/sec",
-            "extra": "44 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 12647,
-            "range": "±4.64%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1019,
-            "range": "±8.10%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 133,
-            "range": "±75.62%",
-            "unit": "ops/sec",
-            "extra": "44 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 98.4,
-            "range": "±37.53%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 12.33,
-            "range": "±104.89%",
-            "unit": "ops/sec",
-            "extra": "24 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±113.99%",
             "unit": "ops/sec",
             "extra": "27 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ab31013d154cc7be157daf21a3b534413dec2547",
+          "message": "client: non-merge related changes (#1519)",
+          "timestamp": "2021-10-07T08:50:33-07:00",
+          "tree_id": "41e8b09b864202b8f77829e9c44dd6589e12ca96",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ab31013d154cc7be157daf21a3b534413dec2547"
+        },
+        "date": 1633622194754,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 12146,
+            "range": "±13.39%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14292,
+            "range": "±2.43%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12567,
+            "range": "±3.24%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6291,
+            "range": "±19.78%",
+            "unit": "ops/sec",
+            "extra": "49 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13078,
+            "range": "±4.33%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1132,
+            "range": "±7.04%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 125,
+            "range": "±89.34%",
+            "unit": "ops/sec",
+            "extra": "39 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 114,
+            "range": "±23.70%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 26.42,
+            "range": "±11.90%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
           }
         ]
       }
